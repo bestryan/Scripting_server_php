@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+	<title>Response Form</title> 
+	
+<style>
+
+
+label
+ {
+ width: 140px;
+ float: left;
+ text-align: left;
+ color: #666666;
+ margin-right: 0.5em;
+ display: block;
+ text-align: right;
+ }
+
+ .submit input
+ {
+ margin-left: 4.5em;
+ } 
+input
+ {
+
+ color: #781351;
+  border: 1px solid #999
+ }
+
+ .submit input
+ {
+ color: #000;
+ border: 4px outset #d7b9c9
+ } 
+fieldset
+ {
+ border: 1px solid #999;
+ width: 38em;
+ background-color: #F0C9F3;
+ }
+
+ legend
+ {
+ color: #fff;
+ background: #003300 ;
+ border: 2px solid #999;
+ padding: 2px 6px
+ } 
+
+select{float:left;
+	margin-left:0;}
+input[type=submit]{margin-left:220px;}	
+	
+    </style>
+
+</head>
+<body>
+
+
+<form action="display.php" method="POST">
+<fieldset>
+<h2>Posh Cars</h2>
+<p><label>Name:</label><input type="text" name="name" size="20"><br></p>
+<p><label>Password:</label><input type="password" name="password" size="20"><br></p>
+<p><label>Comments</label>  <textarea name="comments" rows="3" cols="30"></textarea></p>
+
+<p><label>Car colour</label> 
+	<select name="colour">
+	<option value="Lime">Lime</option>
+	<option value="Black">Black</option>
+	<option value="Orange">Orange</option>
+    <option value="Royal Blue">Royal Blue</option>
+	</select> </p><br/>
+
+
+<p><label>Extras</label> 
+	<input type="checkbox" name="extras[]" value="Window Doggy"> Window Doggy
+	<input type="checkbox" name="extras[]" value="Mag Wheels"> Mag Wheels
+	<input type="checkbox" name="extras[]" value="Leather Strring"> Leather Strring
+    <input type="checkbox" name="extras[]" value="Fluffy Dice"> Fluffy Dice
+
+</p>
+
+
+<input type="submit" name="submit" value="Send">
+</fieldset>
+</form>
+</div>
+</body>
+</html>
