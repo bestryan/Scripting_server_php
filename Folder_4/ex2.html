@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>Update membership</title> 
+	
+<style>
+
+
+label
+ {
+ width: 160px;
+ float: left;
+ text-align: left;
+ color: #666666;
+ margin-right: 0.5em;
+ display: block
+ }
+
+ .submit input
+ {
+ margin-left: 4.5em;
+ } 
+ 
+p{
+    color: #666666;
+}
+
+input
+ {
+
+ color: #781351;
+  border: 1px solid #999
+ }
+ 
+fieldset
+ {
+ border: 1px solid #999;
+ width: 28em;
+ background-color: #daf23f;
+ }
+
+ legend
+ {
+ color: #fff;
+ background: #003300 ;
+ border: 2px solid #999;
+ padding: 2px 6px;
+ } 
+textarea{
+    margin-top: -8px;
+}
+
+select{float:left;
+	}
+#submit{
+color: #000;
+border: 2px outset #d7b9c9}	
+	
+    </style>
+
+</head>
+<body>
+
+<div><p>Please complete this form to update your membership:</p>
+
+<form action="ex2.php" method="post">
+<fieldset>
+<legend>Please complete</legend>
+
+<p><label for="First_name">First Name:</label> 
+	 <input type="text" name="first_name" size="30" id="member"></p>
+ 
+<p><label for="Last_name">Last Name:</label> 
+        <input type="text" name="last_name" size="30" id="member"></p>
+<p>Posting:</p>
+
+<textarea name="comments" rows=8" cols="52"></textarea>
+
+<input type="submit" name="submit" id="submit" value="Send My Posting">
+	
+</fieldset>
+</form>
+
+</div>
+</body>
+</html>
