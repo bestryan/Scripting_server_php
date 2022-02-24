@@ -17,12 +17,14 @@ $extras = $_POST['extras'];
 echo "<p>Thank you, $name, for your comments</p>";
 echo "<p>You stated that you purchased a $colour car and added:</p>";
 echo "$comments";
-echo "<p>You selected ".count($extras)." extras:</p>";
-
-foreach($extras as $extra)
-{
-echo "$extra<br>";
-}
+if (empty($_POST['extras'])){
+    echo "<p>No extra selected</p>";
+}else
+    echo "<p>You selected ".count($extras)." extras:</p>";
+    foreach($extras as $extra)
+    {
+    echo "$extra<br>";
+    }
 ?>
 
 </body>
